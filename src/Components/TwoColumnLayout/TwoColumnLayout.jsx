@@ -1,19 +1,29 @@
-import React from 'react';
-import './TwoColumnLayout.css';
+import React from "react";
+import "./TwoColumnLayout.css";
 
 const TwoColumnLayout = () => {
   return (
     <div className="container">
       <div className="left-column">
         <div className="image-container">
-          <img src="image.jpg" alt="Sample" className="image" />
+          <img src='./assets/girls.jpg' alt="Sample" className="image" />
         </div>
       </div>
       <div className="right-column">
-        <h2 className="title">Welcome to Our Website</h2>
+        <h2 className="title">
+          Antique <br /> Golden Gallery
+        </h2>
         <p className="description">
-          This is a sample text description on the right side. You can add more information here to describe your content or services.
+          A piece of antique jewellery is a timeless classic that will always be
+          in fashion. We <br /> offer a wide range of antique golden jewellery,
+          each piece with its own unique story.
         </p>
+        <p className="description-1">
+          Our pieces are made with the finest materials and craftsmanship,
+          ensuring that you <br /> will love them for years to come. Timeless
+          Elegance.
+        </p>
+        <button className="action-button">Learn More</button>
       </div>
     </div>
   );
