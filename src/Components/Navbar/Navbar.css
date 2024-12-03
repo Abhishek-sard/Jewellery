@@ -1,0 +1,125 @@
+/* Basic Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:white;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    color:black;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 14px;
+}
+
+.nav-links .dropdown {
+    display: none;
+    position: absolute;
+    top: 40px;
+    background-color: #d9dedc;
+    list-style: none;
+    padding: 10px;
+}
+
+.nav-links li:hover .dropdown {
+    display: block;
+}
+
+.nav-links .dropdown li a {
+    color: white;
+    padding: 10px 14px;
+}
+
+.actions .icon {
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.actions .icon:hover {
+    color: #ff0000;
+    /* Example hover color */
+}
+
+.actions .youtube {
+    color: #FF0000;
+    /* YouTube red */
+}
+
+.actions .facebook {
+    color: #3b5998;
+    /* Facebook blue */
+}
+
+.actions .twitter {
+    color: #1DA1F2;
+    /* Twitter blue */
+}
+
+.actions .search {
+    color: #FFFFFF;
+    /* Default white */
+}
+
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+}
+
+.burger div {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+}
+
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
