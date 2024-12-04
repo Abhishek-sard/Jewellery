@@ -8,6 +8,7 @@ import ImageRow from './Components/ImageRow/ImageRow'
 import TwoRowLayer from './Components/TwoRowLayer/TwoRowLayer'
 import ImageHand from './Components/ImageHand/ImageHand'
 import ImageThree from './Components/ImageThree/ImageThree'
+import MiddleLineLayout from './Components/MiddleLineLayout/MiddleLineLayout'
 
 function App() {
   
@@ -22,6 +23,7 @@ function App() {
     <TwoRowLayer/>
     <ImageHand/>
     <ImageThree/>
+    <MiddleLineLayout/>
     </>
   )
 }
