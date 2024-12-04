@@ -6,6 +6,7 @@ import Cart from './Components/cart/Cart'
 import TwoColumnLayout from './Components/TwoColumnLayout/TwoColumnLayout'
 import ImageRow from './Components/ImageRow/ImageRow'
 import TwoRowLayer from './Components/TwoRowLayer/TwoRowLayer'
+import ImageHand from './Components/ImageHand/ImageHand'
 
 function App() {
   
@@ -18,6 +19,7 @@ function App() {
     <TwoColumnLayout/>
     <ImageRow/>
     <TwoRowLayer/>
+    <ImageHand/>
     </>
   )
 }

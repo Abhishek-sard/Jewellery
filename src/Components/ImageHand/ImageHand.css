@@ -1,0 +1,31 @@
+.content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+.heading-file {
+    font-size: 10em;
+    color: #c91F25;
+    margin: -40px;
+    font-style: normal;
+}
+
+/* Image */
+.content img {
+    width: 50%;
+    height: 400px;
+    margin: -60px;
+    border-radius: 0;
+}
+
+/* Paragraph */
+.content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.4;
+    display: flex;
+}
