@@ -61,8 +61,10 @@
 .image-container {
     flex: 1;
     display: flex;
+    height: 600px;
     justify-content: center;
     align-items: center;
+    background-color: #F7c7c7;
 }
 
 .image {

@@ -8,12 +8,18 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:white;
-    padding: 10px 20px;
+    background-color: white;
+    padding: 20px 20px;
+    position: fixed;  /* Fixes the navbar at the top */
+    top: 0;  /* Places it at the very top */
+    left: 0;
+    width: 100%;  /* Ensures the navbar takes the full width */
+    z-index: 1000;  /* Keeps navbar above other content */
+    box-shadow: 0 4px 2px -2px gray;  /* Optional shadow to make it stand out */
 }
 
 .navbar .logo {
-    color:black;
+    color: black;
     font-size: 2.5rem;
     font-weight: bold;
 }
@@ -34,6 +40,7 @@ body {
     text-decoration: none;
     color: black;
     padding: 10px 14px;
+    font-size: 1.2rem;  /* Increased font size for navbar links */
 }
 
 .nav-links .dropdown {
@@ -64,29 +71,23 @@ body {
 
 .actions .icon:hover {
     color: #ff0000;
-    /* Example hover color */
 }
 
 .actions .youtube {
     color: #FF0000;
-    /* YouTube red */
 }
 
 .actions .facebook {
     color: #3b5998;
-    /* Facebook blue */
 }
 
 .actions .twitter {
     color: #1DA1F2;
-    /* Twitter blue */
 }
 
 .actions .search {
     color: #FFFFFF;
-    /* Default white */
 }
-
 
 .burger {
     display: none;

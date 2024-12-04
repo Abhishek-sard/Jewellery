@@ -1,5 +1,6 @@
 import React from "react";
 import "./TwoRowLayer.css";
+import Necklace from '../../assets/girl-necklease.jpg'
 
 export const TwoRowLayer = () => {
   return (
@@ -21,7 +22,7 @@ export const TwoRowLayer = () => {
       </div>
       <div className="image-container">
         <img
-          src="https://i.imgur.com/6x6Qq6B.jpg"
+          src={Necklace}
           alt="Jewelry"
           className="image"
         />

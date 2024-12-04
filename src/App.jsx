@@ -9,6 +9,7 @@ import TwoRowLayer from './Components/TwoRowLayer/TwoRowLayer'
 import ImageHand from './Components/ImageHand/ImageHand'
 import ImageThree from './Components/ImageThree/ImageThree'
 import MiddleLineLayout from './Components/MiddleLineLayout/MiddleLineLayout'
+import Footer from './Components/Footer/Footer'
 
 function App() {
   
@@ -24,6 +25,7 @@ function App() {
     <ImageHand/>
     <ImageThree/>
     <MiddleLineLayout/>
+    <Footer/>
     </>
   )
 }
