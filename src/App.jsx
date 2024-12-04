@@ -7,6 +7,7 @@ import TwoColumnLayout from './Components/TwoColumnLayout/TwoColumnLayout'
 import ImageRow from './Components/ImageRow/ImageRow'
 import TwoRowLayer from './Components/TwoRowLayer/TwoRowLayer'
 import ImageHand from './Components/ImageHand/ImageHand'
+import ImageThree from './Components/ImageThree/ImageThree'
 
 function App() {
   
@@ -20,6 +21,7 @@ function App() {
     <ImageRow/>
     <TwoRowLayer/>
     <ImageHand/>
+    <ImageThree/>
     </>
   )
 }
