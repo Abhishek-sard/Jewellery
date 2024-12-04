@@ -1,0 +1,54 @@
+.background-container {
+    background-image: url('/src/assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.background-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.text-overlay {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.text-overlay h1 {
+    font-size: 5rem;
+    margin: 0;
+    font-weight: 50;
+}
+
+.text-overlay p {
+    font-size: 1.rem;
+    margin-top: 10px;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    .text-overlay h1 {
+        font-size: 2rem;
+        /* Smaller font size on mobile */
+    }
+
+    .text-overlay p {
+        font-size: 1rem;
+        /* Smaller paragraph font size on mobile */
+    }
+}
