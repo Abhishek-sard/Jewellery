@@ -5,6 +5,7 @@ import ImageSlider from './Components/ImageSlider/ImageSlider'
 import Cart from './Components/cart/Cart'
 import TwoColumnLayout from './Components/TwoColumnLayout/TwoColumnLayout'
 import ImageRow from './Components/ImageRow/ImageRow'
+import TwoRowLayer from './Components/TwoRowLayer/TwoRowLayer'
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
     <Cart/>
     <TwoColumnLayout/>
     <ImageRow/>
+    <TwoRowLayer/>
     </>
   )
 }
