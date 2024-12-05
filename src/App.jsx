@@ -12,6 +12,7 @@ import MiddleLineLayout from './Components/MiddleLineLayout/MiddleLineLayout';
 import Footer from './Components/Footer/Footer';
 import Imageabout from './Components/About/ImageAbout/Imageabout';
 import ImagePart from './Components/About/ImagePart/ImagePart';
+import ImageWithText from './Components/About/ImageWithText/ImageWithText';
 
 // Home layout component
 function Home() {
@@ -36,6 +37,7 @@ function About() {
     <>
       <Imageabout />
       <ImagePart />
+      <ImageWithText/>
     </>
   );
 }
