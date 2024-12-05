@@ -37,7 +37,13 @@ const ImagePart = () => {
           </p>
         </div>
         <div className="right-text">
-            <p>This is the right side text.</p>
+            <p>Designed & Produced in Nepal</p>
+            <p>Certified Diamonds & Gemstones</p>
+            <p>One-of-a-kind unique jewelry</p>
+            <p>International Standard 3-step Quality Control</p>
+            <p>Custom Handcrafted Jewelry</p>
+            <p>Exceptional Customer Care</p>
+            <p>Exceptional Customer Care</p>
         </div>
       </div>
     </div>
