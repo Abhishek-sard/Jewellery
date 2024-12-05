@@ -4,18 +4,22 @@ import ImagesDiamond from "../../assets/DiamondRing.jpg";
 
 const MiddleLineLayout = () => {
   return (
-    <div className="layout-container">
-      <div className="left-text">
+    <div className="middle-line-container">
+      <div className="middle-line-left-text">
         <p>
           From simple and stylish to elegant antique pieces - Ganpati jewellery
           has something for everyone.
         </p>
         <h2>- Tenzing Lama</h2>
       </div>
-      <div className="center-content">
-        <img src={ImagesDiamond} alt="Placeholder" className="center-image" />
+      <div className="middle-line-center-content">
+        <img
+          src={ImagesDiamond}
+          alt="Placeholder"
+          className="middle-line-center-image"
+        />
       </div>
-      <div className="right-text">
+      <div className="middle-line-right-text">
         <h1>Antique Gold Gallery</h1>
         <p>
           Antique gold jewellery is a piece of jewelry that is genuine,

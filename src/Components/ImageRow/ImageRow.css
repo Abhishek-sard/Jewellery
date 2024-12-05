@@ -1,75 +1,77 @@
-/* Center the text at the top */
-.text-container {
+.new-arrivals {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
     text-align: center;
+    margin-top: 120px;
+}
+
+.header-container {
     margin-bottom: 20px;
 }
 
-.text-container h1 {
-    font-size: 2.5em;
+.arrivals-title {
+    font-size: 2.5rem;
     color: #333;
+    margin: 0;
 }
 
-.text-container p {
-    font-size: 1.2em;
+.arrivals-subtitle {
+    font-size: 1.2rem;
     color: #666;
 }
 
-/* Flexbox to display images in a row */
-.image-container {
+.arrivals-images {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    /* Space between images */
-    padding: 20px;
+    /* Ensure spacing between items */
+    overflow-x: auto;
+    /* Allow horizontal scrolling if needed */
 }
 
-.image-item {
+.arrivals-item {
+    flex: 0 0 22%;
+    /* Fixed width for each item */
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    /* Center text below each image */
 }
 
-.image {
-    width: 200px;
-    /* Set width for images */
-    height: auto;
-    /* Keep the aspect ratio */
-    border-radius: 8px;
+.arrivals-image {
+    width: 100%;
+    height: 200px;
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Optional: Add a shadow */
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-.image-description {
-    margin-top: 10px;
-    font-size: 1em;
-    color: #555;
+.item-title {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 5px 0;
+    font-weight: bold;
 }
 
-.add-to-cart {
-    margin-top: 10px;
-    background-color: white;
-    color:black;
-    border: 1px solid black;
+.item-price {
+    font-size: 1rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+.add-to-cart-btn {
+    background-color: orangered;
+    color: white;
+    border: none;
     border-radius: 5px;
     padding: 10px 15px;
-    font-size: 1em;
+    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.add-to-cart:hover {
-    background-color: orangered;
-}
-
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-    .image-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .image-item {
-        margin-bottom: 20px;
-    }
+.add-to-cart-btn:hover {
+    background-color: darkred;
+    transform: scale(1.05);
 }

@@ -1,22 +1,27 @@
-.layout-container {
+.middle-line-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #c91F25;
+  background-color: #c91f25;
   color: white;
   padding: 20px;
   height: 600px;
   margin-top: -110px;
 }
 
-.left-text {
+.middle-line-left-text {
   flex: 1;
   padding: 20px;
   text-align: center;
   position: relative;
 }
 
-.center-content {
+.middle-line-left-text p {
+  color: white;
+  /* Ensure the paragraph text is white */
+}
+
+.middle-line-center-content {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -24,16 +29,19 @@
   position: relative;
 }
 
-
-.center-image {
+.middle-line-center-image {
   max-width: 150px;
   border-radius: 10px;
   margin-left: 200px;
 }
 
-
-.right-text {
+.middle-line-right-text {
   flex: 1;
   padding: 20px;
   text-align: center;
+}
+
+.middle-line-right-text p {
+  color: white;
+  /* Ensure the paragraph text is white */
 }
