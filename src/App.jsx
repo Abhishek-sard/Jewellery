@@ -13,6 +13,7 @@ import Footer from './Components/Footer/Footer';
 import Imageabout from './Components/About/ImageAbout/Imageabout';
 import ImagePart from './Components/About/ImagePart/ImagePart';
 import ImageWithText from './Components/About/ImageWithText/ImageWithText';
+import Image3 from './Components/About/Image3/Image3';
 
 // Home layout component
 function Home() {
@@ -38,6 +39,7 @@ function About() {
       <Imageabout />
       <ImagePart />
       <ImageWithText/>
+      <Image3/>
     </>
   );
 }
