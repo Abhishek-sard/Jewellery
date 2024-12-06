@@ -44,7 +44,7 @@ const Navbar = () => {
           <Link to="/gallery">Gallery</Link>
         </li>
         <li>
-          <Link to="/schedule">Schedule for Virtual Counselling</Link>
+          <Link to="/schedule">Schedule your Virtual Counselling</Link>
         </li>
       </ul>
       <div className="actions">
