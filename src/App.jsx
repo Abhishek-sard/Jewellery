@@ -16,6 +16,7 @@ import ImageWithText from './Components/About/ImageWithText/ImageWithText';
 import Image3 from './Components/About/Image3/Image3';
 import LayerImage from './Components/About/4LayerImage/LayerImage';
 import UniqueMiddleLineLayout from './Components/About/UniqueMiddleLineLayout/UniqueMiddleLineLayout';
+import AboutFooter from './Components/About/AboutFooter/AboutFooter';
 
 
 // Home layout component
@@ -45,6 +46,7 @@ function About() {
       <Image3/>
       <LayerImage/>
       <UniqueMiddleLineLayout/>
+      <AboutFooter/>
     </>
   );
 }
