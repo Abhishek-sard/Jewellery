@@ -1,37 +1,33 @@
 import React from "react";
 import "./Image3.css";
-import Image1 from "../../../assets/table1.jpg";  
-import Image2 from "../../../assets/table2.jpg"; 
-import Image4 from "../../../assets/table3.jpg"; 
+import Image1 from "../../../assets/table1.jpg";
+import Image2 from "../../../assets/table2.jpg";
+import Image4 from "../../../assets/table3.jpg";
 
 const Image3 = () => {
   return (
-    <div className="container">
-      <div className="text-section">
-        <h2>Unique Jewelry Designs</h2>
+    <div className="image3-container">
+      <div className="image3-text-section">
+        <h2>
+          <span>DIAMOND</span>
+        </h2>
+        <h2>GOLD</h2>
+        <h2>SILVER</h2>
         <p>
-          Our jewelry collections combine timeless designs with modern aesthetics. Every piece is crafted with the utmost attention to detail, ensuring both beauty and durability.
-        </p>
-        <h3>Why Choose Us?</h3>
-        <p>
-          - Exclusive Designs<br />
-          - Highest Quality Craftsmanship<br />
-          - Customizable Jewelry Options<br />
-          - Affordable Luxury for Everyone
-        </p>
-        <p>
-          Our experienced designers are constantly creating new and unique pieces to reflect personal styles and preferences. Whether you are looking for a statement piece or a subtle accessory, we have something for you.
+          What sets our diamond jewellery apart from other stores is the quality
+          of our diamonds. We only use the finest diamonds in our jewellery, We
+          use ethically sourced diamonds one of the best color and clarity.
         </p>
       </div>
-      <div className="image-section">
-        <div className="large-image">
+      <div className="image3-image-section">
+        <div className="image3-large-image">
           <img src={Image1} alt="Large Jewelry" />
         </div>
-        <div className="bottom-images">
-          <div className="small-image">
+        <div className="image3-bottom-images">
+          <div className="image3-small-image">
             <img src={Image2} alt="Small Jewelry" />
           </div>
-          <div className="small-image">
+          <div className="image3-small-image">
             <img src={Image4} alt="Small Jewelry" />
           </div>
         </div>
