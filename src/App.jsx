@@ -18,6 +18,7 @@ import LayerImage from "./Components/About/4LayerImage/LayerImage";
 import UniqueMiddleLineLayout from "./Components/About/UniqueMiddleLineLayout/UniqueMiddleLineLayout";
 import AboutFooter from "./Components/About/AboutFooter/AboutFooter";
 import ScheduleBody from "./Components/Schedule/ScheduleBody/ScheduleBody";
+import ImageAdd from "./Components/Schedule/ImageAdd/ImageAdd";
 
 // Home layout component
 function Home() {
@@ -56,6 +57,7 @@ function Schedule() {
   return (
     <>
       <ScheduleBody />
+      <ImageAdd/>
     </>
   );
 }
