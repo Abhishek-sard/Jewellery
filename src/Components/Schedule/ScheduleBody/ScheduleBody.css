@@ -51,3 +51,79 @@
     border-radius: 600px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/************login-css**********/
+.login-form {
+    border: 2px solid green;
+    /* Green border for the form */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    /* Light background color */
+    max-width: 600px;
+    margin: 20px auto;
+    /* Center the form */
+    font-family: Arial, sans-serif;
+}
+
+.login-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    /* Space between items */
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+    /* Equal width for form groups */
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: green;
+    /* Highlight input fields with green border */
+    outline: none;
+}
+
+.send-button {
+    display: block;
+    width: 20%;
+    padding: 10px;
+    background-color: rgb(209, 209, 209);
+    color:black;
+    font-size: 16px;
+    font-weight: normal;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-button:hover {
+    background-color: rgb(242, 237, 227);
+}
