@@ -19,6 +19,7 @@ import UniqueMiddleLineLayout from "./Components/About/UniqueMiddleLineLayout/Un
 import AboutFooter from "./Components/About/AboutFooter/AboutFooter";
 import ScheduleBody from "./Components/Schedule/ScheduleBody/ScheduleBody";
 import ImageAdd from "./Components/Schedule/ImageAdd/ImageAdd";
+import ScheduleFooter from "./Components/Schedule/ScheduleFooter/ScheduleFooter";
 
 // Home layout component
 function Home() {
@@ -58,6 +59,7 @@ function Schedule() {
     <>
       <ScheduleBody />
       <ImageAdd/>
+      <ScheduleFooter/>
     </>
   );
 }
