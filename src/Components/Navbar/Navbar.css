@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -11,24 +12,23 @@ body {
     background-color: white;
     padding: 20px 20px;
     position: fixed;
-    /* Fixes the navbar at the top */
     top: 0;
-    /* Places it at the very top */
     left: 0;
     width: 100%;
-    /* Ensures the navbar takes the full width */
     z-index: 1000;
-    /* Keeps navbar above other content */
     box-shadow: 0 4px 2px -2px gray;
-    /* Optional shadow to make it stand out */
 }
 
-.navbar .logo {
-    color: black;
-    font-size: 2.5rem;
-    font-weight: bold;
+/* Logo */
+.navbar .logo img {
+    max-height: 60px;
+    /* Adjust to fit in the navbar */
+    width: auto;
+    object-fit: contain;
+    /* Ensure logo maintains aspect ratio */
 }
 
+/* Navigation Links */
 .nav-links {
     list-style: none;
     display: flex;
@@ -38,7 +38,8 @@ body {
 
 .nav-links li {
     position: relative;
-    margin: 0 15px;
+    margin: 0 8px;
+    /* Reduced margin between navbar items */
 }
 
 .nav-links a {
@@ -46,9 +47,9 @@ body {
     color: black;
     padding: 10px 14px;
     font-size: 1.2rem;
-    /* Increased font size for navbar links */
 }
 
+/* Dropdown Menu */
 .nav-links .dropdown {
     display: none;
     position: absolute;
@@ -67,10 +68,17 @@ body {
     padding: 10px 14px;
 }
 
+/* Actions (Icons) */
+.actions {
+    display: flex;
+    align-items: center;
+}
+
 .actions .icon {
     font-size: 1.5rem;
-    color: white;
-    margin-left: 15px;
+    color: black;
+    margin-right: 60px;
+    /* Reduced margin between icons */
     cursor: pointer;
     transition: color 0.3s ease;
 }
@@ -79,22 +87,25 @@ body {
     color: #ff0000;
 }
 
-.actions .youtube {
-    color: #FF0000;
-}
+
 
 .actions .facebook {
     color: #3b5998;
 }
 
-.actions .twitter {
-    color: #1DA1F2;
-}
+
 
 .actions .search {
-    color: #FFFFFF;
+    color: black;
 }
 
+/* Adjusting the distance between user icon and other icons */
+.actions .user {
+    margin-left: 20px;
+    /* Add margin between the user icon and other icons */
+}
+
+/* Burger Menu for Mobile */
 .burger {
     display: none;
     cursor: pointer;
@@ -104,7 +115,8 @@ body {
 }
 
 .burger div {
-    background-color: white;
+    background-color: black;
+    /* Color of burger lines */
     height: 3px;
     width: 25px;
 }
@@ -120,6 +132,7 @@ body {
     padding: 10px 0;
 }
 
+/* Responsive Design for Small Screens */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -131,26 +144,22 @@ body {
     }
 }
 
-/**icons user**/
 /* Icon styles */
 .icon {
     font-size: 20px;
-    margin: 0 10px;
+    margin-left: 0 3px;
+    /* Reduced margin between icons */
     cursor: pointer;
 }
 
 .icon:hover {
-    color:black;
-    /* Change color on hover */
+    color: black;
 }
 
-/* Optional: Style specific icons */
 .icon.user {
     color: black;
-    /* Green color for user icon */
 }
 
 .icon.login {
     color: #2196f3;
-    /* Blue color for login icon */
 }

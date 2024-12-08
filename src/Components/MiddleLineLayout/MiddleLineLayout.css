@@ -2,11 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f58806;
+  background-color: #f58806 !important;
+  /* Added !important */
   color: white;
   padding: 20px;
   height: 600px;
   margin-top: -110px;
+  z-index: 10;
+  /* Ensure it's on top of other elements */
 }
 
 .middle-line-left-text {
@@ -18,7 +21,6 @@
 
 .middle-line-left-text p {
   color: white;
-  /* Ensure the paragraph text is white */
 }
 
 .middle-line-center-content {
@@ -43,5 +45,4 @@
 
 .middle-line-right-text p {
   color: white;
-  /* Ensure the paragraph text is white */
 }

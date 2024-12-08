@@ -2,12 +2,10 @@ import { useState } from "react";
 import { Link } from "react-router-dom"; // Import Link component
 import "./Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faYoutube,
-  faFacebook,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons"; // For brand icons
+import { faFacebook } from "@fortawesome/free-brands-svg-icons"; // For brand icons
 import { faSearch, faUser } from "@fortawesome/free-solid-svg-icons"; // For solid icons
+import { faTiktok } from "@fortawesome/free-brands-svg-icons"; // For TikTok icon
+import LOGO from "../../assets/Logo-02 (1).png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,7 +16,9 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo">MyBrand</div>
+      <div className="logo">
+        <img src={LOGO} alt="Logo" />
+      </div>
       <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
         <li>
           <Link to="/">Home</Link>
@@ -41,35 +41,41 @@ const Navbar = () => {
           </ul>
         </li>
         <li>
-          <Link to="/gallery">Gallery</Link>
-        </li>
-        <li>
           <Link to="/schedule">Schedule your Virtual Counselling</Link>
         </li>
-        {/* <li>
-          <link to="/User" ><FontAwesomeIcon
-            icon={faUser}
-            className="icon user"
-            title="User Profile"
-          /></link>
-        </li> */}
+        <li>
+          <Link to="/User">
+            <FontAwesomeIcon
+              icon={faUser}
+              className="icon user"
+              title="User Profile"
+            />
+          </Link>
+        </li>
       </ul>
       <div className="actions">
-        <FontAwesomeIcon
-          icon={faYoutube}
-          className="icon youtube"
-          title="YouTube"
-        />
-        <FontAwesomeIcon
-          icon={faFacebook}
-          className="icon facebook"
-          title="Facebook"
-        />
-        <FontAwesomeIcon
-          icon={faTwitter}
-          className="icon twitter"
-          title="Twitter"
-        />
+        <a
+          href="https://www.facebook.com/p/Om-Laxmi-Gahana-Griha-61567682581154/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon
+            icon={faFacebook}
+            className="icon facebook"
+            title="Facebook"
+          />
+        </a>
+        <a
+          href="https://www.tiktok.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon
+            icon={faTiktok} // TikTok icon here
+            className="icon tiktok"
+            title="TikTok"
+          />
+        </a>
         <FontAwesomeIcon
           icon={faSearch}
           className="icon search"

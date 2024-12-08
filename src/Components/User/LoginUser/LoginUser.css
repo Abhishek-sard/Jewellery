@@ -1,0 +1,113 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for both login and register forms */
+.auth-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    min-height: 50vh;
+    background-color: #f4f4f4;
+    margin-top: 140px;
+}
+
+/* Styling for the form boxes */
+.form-box {
+    width: 45%;
+    padding: 24px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form box titles */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for the input fields */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Styling for buttons */
+button {
+    width: auto;
+    /* Button width adjusted */
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    /* Space above the button */
+}
+
+button:hover {
+    background-color: rgb(123, 32, 32);
+}
+
+/* Styling for the login form box */
+.login-box {
+    border: 2px solid black;
+}
+
+/* Styling for the register form box */
+.register-box {
+    border: 2px solid black;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .auth-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    button {
+        width: auto;
+    }
+}
+
+/* Additional styling for informational text */
+p {
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center;
+    margin-top: 10px;
+}
+
+p a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

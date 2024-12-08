@@ -1,12 +1,12 @@
 import React from "react";
 import "./AboutFooter.css";
-import GodGanesh from '../../../assets/ganesh.jpg'
+import BrandLogo from '../../../assets/logo-03.png'
 
 const AboutFooter = () => {
   return (
     <div className="unique-footer">
       <div className="unique-footer-image">
-        <img src={GodGanesh} alt="Footer Image" className="unique-footer-img" />
+        <img src={BrandLogo} alt="Footer Image" className="unique-footer-img" />
       </div>
       <div className="unique-footer-content">
         <div className="unique-footer-column">

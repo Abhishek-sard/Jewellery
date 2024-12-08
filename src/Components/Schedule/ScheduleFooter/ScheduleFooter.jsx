@@ -1,11 +1,11 @@
 import React from "react";
 import "./ScheduleFooter.css";
-import God from '../../../assets/ganesh.jpg'
+import BrandLogo from '../../../assets/logo-03.png'
 const ScheduleFooter = () => {
   return (
     <div className="footer-container">
       <div className="footer-image-section">
-        <img src={God} alt="Footer Image" className="footer-image" />
+        <img src={BrandLogo} alt="Footer Image" className="footer-image" />
       </div>
       <div className="footer-links">
         <div className="footer-link-column">
