@@ -21,7 +21,7 @@ const Navbar = () => {
       </div>
       <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/ bg-red-500">Home</Link>
         </li>
         <li>
           <Link to="/about">About</Link>
