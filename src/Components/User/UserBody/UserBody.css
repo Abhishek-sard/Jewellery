@@ -1,0 +1,48 @@
+.middle-line-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f58806 !important;
+    /* Added !important */
+    color: white;
+    padding: 20px;
+    height: 600px;
+    margin-top: -110px;
+    z-index: 10;
+    /* Ensure it's on top of other elements */
+}
+
+.middle-line-left-text {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.middle-line-left-text p {
+    color: white;
+}
+
+.middle-line-center-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.middle-line-center-image {
+    max-width: 150px;
+    border-radius: 10px;
+    margin-left: 200px;
+}
+
+.middle-line-right-text {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.middle-line-right-text p {
+    color: white;
+}
