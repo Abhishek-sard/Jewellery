@@ -10,12 +10,17 @@ body {
     align-items: center;
     background-color: white;
     padding: 20px 20px;
-    position: fixed;  /* Fixes the navbar at the top */
-    top: 0;  /* Places it at the very top */
+    position: fixed;
+    /* Fixes the navbar at the top */
+    top: 0;
+    /* Places it at the very top */
     left: 0;
-    width: 100%;  /* Ensures the navbar takes the full width */
-    z-index: 1000;  /* Keeps navbar above other content */
-    box-shadow: 0 4px 2px -2px gray;  /* Optional shadow to make it stand out */
+    width: 100%;
+    /* Ensures the navbar takes the full width */
+    z-index: 1000;
+    /* Keeps navbar above other content */
+    box-shadow: 0 4px 2px -2px gray;
+    /* Optional shadow to make it stand out */
 }
 
 .navbar .logo {
@@ -40,7 +45,8 @@ body {
     text-decoration: none;
     color: black;
     padding: 10px 14px;
-    font-size: 1.2rem;  /* Increased font size for navbar links */
+    font-size: 1.2rem;
+    /* Increased font size for navbar links */
 }
 
 .nav-links .dropdown {
@@ -123,4 +129,28 @@ body {
     .burger {
         display: flex;
     }
+}
+
+/**icons user**/
+/* Icon styles */
+.icon {
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color:black;
+    /* Change color on hover */
+}
+
+/* Optional: Style specific icons */
+.icon.user {
+    color: black;
+    /* Green color for user icon */
+}
+
+.icon.login {
+    color: #2196f3;
+    /* Blue color for login icon */
 }

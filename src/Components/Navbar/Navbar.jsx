@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from 'react-router-dom';  // Import Link component
+import { Link } from "react-router-dom"; // Import Link component
 import "./Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -7,7 +7,7 @@ import {
   faFacebook,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons"; // For brand icons
-import { faSearch } from "@fortawesome/free-solid-svg-icons"; // For solid icons
+import { faSearch, faUser } from "@fortawesome/free-solid-svg-icons"; // For solid icons
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -46,6 +46,13 @@ const Navbar = () => {
         <li>
           <Link to="/schedule">Schedule your Virtual Counselling</Link>
         </li>
+        {/* <li>
+          <link to="/User" ><FontAwesomeIcon
+            icon={faUser}
+            className="icon user"
+            title="User Profile"
+          /></link>
+        </li> */}
       </ul>
       <div className="actions">
         <FontAwesomeIcon

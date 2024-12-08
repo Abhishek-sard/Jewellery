@@ -20,6 +20,7 @@ import AboutFooter from "./Components/About/AboutFooter/AboutFooter";
 import ScheduleBody from "./Components/Schedule/ScheduleBody/ScheduleBody";
 import ImageAdd from "./Components/Schedule/ImageAdd/ImageAdd";
 import ScheduleFooter from "./Components/Schedule/ScheduleFooter/ScheduleFooter";
+// import LoginUser from "./Components/User/LoginUser/LoginUser";
 
 // Home layout component
 function Home() {
@@ -58,11 +59,18 @@ function Schedule() {
   return (
     <>
       <ScheduleBody />
-      <ImageAdd/>
-      <ScheduleFooter/>
+      <ImageAdd />
+      <ScheduleFooter />
     </>
   );
 }
+// function User(){
+//   return (
+//     <>
+//     <LoginUser/>
+//     </>
+//   );
+// }
 
 function App() {
   return (
@@ -72,6 +80,7 @@ function App() {
         <Route path="/" element={<Home />} />{" "}
         <Route path="/about" element={<About />} /> {/* About route */}
         <Route path="/schedule" element={<Schedule />} /> {/* Schedule route */}
+        {/* <Route path="/User" element={<User/>}/>  */}
       </Routes>
     </Router>
   );
