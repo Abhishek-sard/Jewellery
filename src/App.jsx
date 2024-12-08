@@ -21,6 +21,7 @@ import ScheduleBody from "./Components/Schedule/ScheduleBody/ScheduleBody";
 import ImageAdd from "./Components/Schedule/ImageAdd/ImageAdd";
 import ScheduleFooter from "./Components/Schedule/ScheduleFooter/ScheduleFooter";
 import LoginUser from "./Components/User/LoginUser/LoginUser";
+import FooterPart from "./Components/User/FooterPart/FooterPart";
 
 // Home layout component
 function Home() {
@@ -68,6 +69,7 @@ function User(){
   return (
     <>
     <LoginUser/>
+    <FooterPart/>
     </>
   );
 }
