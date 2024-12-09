@@ -17,7 +17,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <img src={LOGO} alt="Logo" />
+        <Link to="/">
+          <img src={LOGO} alt="Logo" />
+        </Link>
       </div>
       <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
         <li>
