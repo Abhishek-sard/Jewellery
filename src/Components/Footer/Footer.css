@@ -60,6 +60,17 @@
     font-weight: lighter;
 }
 
+.footer a {
+    text-decoration: none;
+    /* Removes underline from the link */
+}
+
+.footer a:hover {
+    text-decoration: none;
+    /* Optional: adds underline on hover */
+}
+
+
 /* For responsiveness, ensure proper layout on smaller screens */
 @media (max-width: 768px) {
     .footer-content {

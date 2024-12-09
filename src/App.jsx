@@ -23,6 +23,7 @@ import ScheduleFooter from "./Components/Schedule/ScheduleFooter/ScheduleFooter"
 import LoginUser from "./Components/User/LoginUser/LoginUser";
 import FooterPart from "./Components/User/FooterPart/FooterPart";
 import UserBody from "./Components/User/UserBody/UserBody";
+import TermCondition from "./Components/FooterAPI/TermCondition/TermCondition";
 
 // Home layout component
 function Home() {
@@ -66,12 +67,13 @@ function Schedule() {
     </>
   );
 }
-function User(){
+
+function User() {
   return (
     <>
-    <LoginUser/>
-    <UserBody/>
-    <FooterPart/>
+      <LoginUser />
+      <UserBody />
+      <FooterPart />
     </>
   );
 }
@@ -81,10 +83,12 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />{" "}
-        <Route path="/about" element={<About />} /> {/* About route */}
-        <Route path="/schedule" element={<Schedule />} /> {/* Schedule route */}
-        <Route path="/User" element={<User/>}/> 
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/schedule" element={<Schedule />} />
+        <Route path="/User" element={<User />} />
+        <Route path="/terms-and-conditions" element={<TermCondition />} />{" "}
+        {/* New route for TermCondition */}
       </Routes>
     </Router>
   );

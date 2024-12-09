@@ -1,0 +1,40 @@
+.term-condition-container {
+    display: flex;
+    justify-content: center;
+    align-items: span;
+    padding: 20px;
+  }
+  
+  .term-condition-content {
+    max-width: 1200px;
+    width: 90%;
+    padding: 20px;
+    margin: 0 15px;
+    border-style: initial;
+  }
+  
+  h1,
+  h3 {
+    margin-bottom: 15px;
+  }
+  
+  p, ul, ol {
+    margin-left: 0; /* Remove any default left margin */
+    padding-left: 0; /* Remove padding */
+    text-indent: 0; /* Ensure no text indent for alignment consistency */
+  }
+  
+  p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  ul, ol {
+    list-style-position: inside; /* Ensures list items are aligned with the text */
+    padding-left: 20px; /* Align list items with the text */
+  }
+  
+  li {
+    margin-bottom: 10px; /* Adds space between list items */
+  }
+  

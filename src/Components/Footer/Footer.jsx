@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import BrandLogo from "../../assets/logo-03.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -13,7 +14,14 @@ const Footer = () => {
           <h3>Links</h3>
           <p>Gallery</p>
           <p>Blog</p>
-          <p>Store Location</p>
+          {/* Corrected Store Location Link */}
+          <a
+            href="https://www.google.com/maps/place/OM+LAXMI+GAHANA+GIRHA/@26.6619395,87.2753406,15.58z/data=!4m6!3m5!1s0x39ef6d718cf4a197:0x83a2683ac6c4a599!8m2!3d26.6619182!4d87.2748155!16s%2Fg%2F11ldx1hcds?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p>Store Location</p>
+          </a>
           <p>Contact Us</p>
           <p>Sitemap</p>
         </div>
@@ -27,7 +35,10 @@ const Footer = () => {
           <h3>Others</h3>
           <p>About Us</p>
           <p>FAQs</p>
-          <p>Terms & Condition</p>
+          {/* Corrected Link to Terms & Conditions */}
+          <Link to="/terms-and-conditions">
+            <p>Terms & Condition</p>
+          </Link>
           <p>Privacy Policy</p>
         </div>
       </div>
