@@ -1,0 +1,60 @@
+.privacy-policy {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    text-align: justify;
+    font-family: Raleway (woff2),sans-serif;
+    vertical-align: baseline;
+}
+
+/* Header and section titles */
+.text-bars h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    color: #212529;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.text-bars h5,
+.text-bars h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: #212529;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Paragraph styles */
+.text-bars p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #212529;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-indent: 25px;
+}
+
+/* List styling for the points */
+.text-bars p+p {
+    margin-left: 25px;
+    list-style-type: decimal;
+}
+
+.text-bars p:nth-child(1),
+/* For the first item */
+.text-bars p:nth-child(2),
+/* For the second item */
+.text-bars p:nth-child(3),
+/* For the third item */
+.text-bars p:nth-child(4)
+
+/* For the fourth item */
+    {
+    list-style-position: inside;
+    /* Ensure the list numbering is inside the content block */
+}
+

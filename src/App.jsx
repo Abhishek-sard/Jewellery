@@ -24,6 +24,7 @@ import LoginUser from "./Components/User/LoginUser/LoginUser";
 import FooterPart from "./Components/User/FooterPart/FooterPart";
 import UserBody from "./Components/User/UserBody/UserBody";
 import TermCondition from "./Components/FooterAPI/TermCondition/TermCondition";
+import PrivacyPolicy from "./Components/FooterAPI/PrivacyPolicy/PrivacyPolicy";
 
 // Home layout component
 function Home() {
@@ -68,6 +69,7 @@ function Schedule() {
   );
 }
 
+// User components
 function User() {
   return (
     <>
@@ -86,9 +88,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/schedule" element={<Schedule />} />
-        <Route path="/User" element={<User />} />
-        <Route path="/terms-and-conditions" element={<TermCondition />} />{" "}
-        {/* New route for TermCondition */}
+        <Route path="/user" element={<User />} />{" "}
+        {/* Changed from "/User" to "/user" for consistency */}
+        <Route path="/terms-and-conditions" element={<TermCondition />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />{" "}
+        {/* Changed route name to lowercase */}
       </Routes>
     </Router>
   );
