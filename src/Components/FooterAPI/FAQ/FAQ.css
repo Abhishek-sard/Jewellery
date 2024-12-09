@@ -1,0 +1,90 @@
+/* Overall styling for the FAQ container */
+.Faq {
+    font-family: 'Raleway', sans-serif;
+    color: #212529;
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.second-step {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.second-step h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.second-step h1 {
+    font-size: 2rem;
+    font-weight: 100;
+    margin-bottom: 20px;
+    color: #212529;
+}
+
+.text-sections h1,
+.text-sections h2,
+.text-sections p {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #343a40;
+    text-align: left;
+}
+
+.text-sections p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #495057;
+}
+
+.text-sections h2 {
+    font-size: 1.75rem;
+    font-weight: 100;
+    margin-top: 30px;
+    color: #212529;
+}
+
+.text-sections {
+    text-align: justify;
+}
+
+/* Remove margins from last <p> */
+.text-sections p:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+    .Faq {
+        padding: 15px;
+        /* Reduce padding on smaller screens */
+    }
+
+    .second-step {
+        padding: 20px;
+    }
+
+    .second-step h1 {
+        font-size: 1.5rem;
+        /* Smaller font size for main headings */
+    }
+
+    .text-sections h1 {
+        font-size: 1.2rem;
+        /* Smaller font size for questions */
+    }
+
+    .text-sections p {
+        font-size: 0.9rem;
+        /* Smaller font size for answers */
+    }
+}

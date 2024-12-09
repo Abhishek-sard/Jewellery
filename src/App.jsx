@@ -1,6 +1,11 @@
-import "./App.css";
+import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+// Components for each layout
 import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
+
+// Home page components
 import ImageSlider from "./Components/ImageSlider/ImageSlider";
 import Cart from "./Components/cart/Cart";
 import TwoColumnLayout from "./Components/TwoColumnLayout/TwoColumnLayout";
@@ -9,7 +14,8 @@ import TwoRowLayer from "./Components/TwoRowLayer/TwoRowLayer";
 import ImageHand from "./Components/ImageHand/ImageHand";
 import ImageThree from "./Components/ImageThree/ImageThree";
 import MiddleLineLayout from "./Components/MiddleLineLayout/MiddleLineLayout";
-import Footer from "./Components/Footer/Footer";
+
+// About page components
 import Imageabout from "./Components/About/ImageAbout/Imageabout";
 import ImagePart from "./Components/About/ImagePart/ImagePart";
 import ImageWithText from "./Components/About/ImageWithText/ImageWithText";
@@ -17,14 +23,21 @@ import Image3 from "./Components/About/Image3/Image3";
 import LayerImage from "./Components/About/4LayerImage/LayerImage";
 import UniqueMiddleLineLayout from "./Components/About/UniqueMiddleLineLayout/UniqueMiddleLineLayout";
 import AboutFooter from "./Components/About/AboutFooter/AboutFooter";
+
+// Schedule page components
 import ScheduleBody from "./Components/Schedule/ScheduleBody/ScheduleBody";
 import ImageAdd from "./Components/Schedule/ImageAdd/ImageAdd";
 import ScheduleFooter from "./Components/Schedule/ScheduleFooter/ScheduleFooter";
+
+// User page components
 import LoginUser from "./Components/User/LoginUser/LoginUser";
 import FooterPart from "./Components/User/FooterPart/FooterPart";
 import UserBody from "./Components/User/UserBody/UserBody";
+
+// Footer API components
 import TermCondition from "./Components/FooterAPI/TermCondition/TermCondition";
 import PrivacyPolicy from "./Components/FooterAPI/PrivacyPolicy/PrivacyPolicy";
+import FAQ from "./Components/FooterAPI/FAQ/FAQ";
 
 // Home layout component
 function Home() {
@@ -88,11 +101,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/schedule" element={<Schedule />} />
-        <Route path="/user" element={<User />} />{" "}
-        {/* Changed from "/User" to "/user" for consistency */}
+        <Route path="/user" element={<User />} />
         <Route path="/terms-and-conditions" element={<TermCondition />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />{" "}
-        {/* Changed route name to lowercase */}
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/faqs" element={<FAQ />} />
       </Routes>
     </Router>
   );

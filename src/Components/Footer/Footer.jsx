@@ -34,7 +34,9 @@ const Footer = () => {
         <div className="footer-column">
           <h3>Others</h3>
           <p>About Us</p>
-          <p>FAQs</p>
+          <Link to="/Faqs">
+            <p>FAQs</p>
+          </Link>
           {/* Corrected Link to Terms & Conditions */}
           <Link to="/terms-and-conditions">
             <p>Terms & Condition</p>
