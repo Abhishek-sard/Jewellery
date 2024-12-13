@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom"; // Import Link component
 import "./Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,10 +9,26 @@ import LOGO from "../../assets/Logo-02 (1).png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [categories, setCategories] = useState([]); // State for categories
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
+  // Fetch categories from API
+  useEffect(() => {
+    const fetchCategories = async () => {
+      try {
+        const response = await fetch("http://localhost:8000/api/v1/categories");
+        const data = await response.json();
+        setCategories(data); // Assuming `data` is an array of categories
+      } catch (error) {
+        console.error("Error fetching categories:", error);
+      }
+    };
+
+    fetchCategories();
+  }, []);
 
   return (
     <nav className="navbar">
@@ -29,17 +45,17 @@ const Navbar = () => {
           <Link to="/about">About</Link>
         </li>
         <li className="dropdown-container">
-          <Link to="/products">Products</Link>
+          <Link to="/Products">Products</Link>
           <ul className="dropdown">
-            <li>
-              <Link to="/products/books">Books</Link>
-            </li>
-            <li>
-              <Link to="/products/electronics">Electronics</Link>
-            </li>
-            <li>
-              <Link to="/products/clothing">Clothing</Link>
-            </li>
+            {categories.length > 0 ? (
+              categories.map((category) => (
+                <li key={category.id}>
+                  <Link to={`/Products/${category.slug}`}>{category.name}</Link>
+                </li>
+              ))
+            ) : (
+              <li>Loading...</li>
+            )}
           </ul>
         </li>
         <li>

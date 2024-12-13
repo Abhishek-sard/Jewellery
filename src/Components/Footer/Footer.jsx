@@ -22,7 +22,9 @@ const Footer = () => {
           >
             <p>Store Location</p>
           </a>
+          <Link to="/Contacts-Us">
           <p>Contact Us</p>
+          </Link>
           <p>Sitemap</p>
         </div>
         <div className="footer-column">
@@ -33,7 +35,6 @@ const Footer = () => {
         </div>
         <div className="footer-column">
           <h3>Others</h3>
-          <p>About Us</p>
           <Link to="/Faqs">
             <p>FAQs</p>
           </Link>
