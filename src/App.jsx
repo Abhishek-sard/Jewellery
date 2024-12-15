@@ -39,7 +39,7 @@ import TermCondition from "./Components/FooterAPI/TermCondition/TermCondition";
 import PrivacyPolicy from "./Components/FooterAPI/PrivacyPolicy/PrivacyPolicy";
 import FAQ from "./Components/FooterAPI/FAQ/FAQ";
 import ContactUs from "./Components/FooterAPI/ContactUs/ContactUs";
-import Products from "./Components/API/Products"
+import Products from "./Components/API/Products/Products";
 import ProductCategory from "./Components/API/Products/ProductCategory";
 
 // Home layout component
@@ -108,12 +108,10 @@ function App() {
         <Route path="/terms-and-conditions" element={<TermCondition />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/faqs" element={<FAQ />} />
-        <Route path="/Contacts-Us" element={<ContactUs />} />
-        {/* //calling the api from the postman
-        Add products routes */}
-
-        <Route path="/Products" element={<Products/>}/>
-        <Route path="/Products/:slug" element={<ProductCategory/>}/>
+        <Route path="/contact-us" element={<ContactUs />} />
+        {/* Products routes */}
+        <Route path="/products" element={<Products />} />
+        <Route path="/products/:slug" element={<ProductCategory />} />
       </Routes>
     </Router>
   );

@@ -1,0 +1,14 @@
+.products-page {
+    text-align: center;
+    padding: 20px;
+}
+
+.category-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.category-list li {
+    font-size: 18px;
+    margin: 10px 0;
+}
