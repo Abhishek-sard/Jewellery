@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faTiktok } from "@fortawesome/free-brands-svg-icons";
 import { faSearch, faUser } from "@fortawesome/free-solid-svg-icons";
 import LOGO from "../../assets/Logo-02 (1).png";
+import ProductsNav from "../product/ProductsNav";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,18 +29,10 @@ const Navbar = () => {
           <Link to="/about">About</Link>
         </li>
         <li className="dropdown-container">
-          <Link to="/product">Products</Link>
-          <ul className="dropdown">
-            <li>
-              <Link to="/products/books">Books</Link>
-            </li>
-            <li>
-              <Link to="/products/electronics">Electronics</Link>
-            </li>
-            <li>
-              <Link to="/products/clothing">Clothing</Link>
-            </li>
-          </ul>
+          <Link to="/product/ProductsNav">Products</Link>
+          <div className="dropdown">
+            <ProductsNav />
+          </div>
         </li>
         <li>
           <Link to="/schedule">Schedule</Link>

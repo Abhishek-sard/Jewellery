@@ -53,8 +53,8 @@ body {
 .nav-links .dropdown {
     display: none;
     position: absolute;
-    top: 40px;
-    background-color: #d9dedc;
+    right: -560px;
+    /* background-color: #f0f3f2d2; */
     list-style: none;
     padding: 10px;
 }
