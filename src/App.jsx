@@ -41,6 +41,11 @@ import FAQ from "./Components/FooterAPI/FAQ/FAQ";
 import ContactUs from "./Components/FooterAPI/ContactUs/ContactUs";
 import Products from "./Components/API/Products/Products";
 import ProductCategory from "./Components/API/Products/ProductCategory";
+import Dashboard from "./Components/Dashboard/Dashboard";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import Admin from "./Components/Admin/Admin";
 
 // Home layout component
 function Home() {
@@ -112,6 +117,8 @@ function App() {
         {/* Products routes */}
         <Route path="/products" element={<Products />} />
         <Route path="/products/:slug" element={<ProductCategory />} />
+        <Route path="/Dashboard" element={<Dashboard/>}/>
+        <Route path="/admin" element={<Admin/>}/>
       </Routes>
     </Router>
   );

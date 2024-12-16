@@ -28,7 +28,7 @@ const Footer = () => {
           <p>Sitemap</p>
         </div>
         <div className="footer-column">
-          <h3>Ganpati Jewellers Nepal Pvt.Ltd</h3>
+          <h3>Om LAXMI GAHANA GHAIR</h3>
           <p>Bishal Bazar, New Road , Kathmandu</p>
           <p>Tel: +977-1-5321565, 5321492</p>
           <p>Email: info@ganapatijewellers.com</p>
