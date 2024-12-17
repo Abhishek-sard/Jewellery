@@ -1,57 +1,131 @@
-import React from "react";
-import ProductForm from "./Pages/ProductForm";
-import {
-  FaHome,
-  FaUserAlt,
-  FaChartBar,
-  FaCog,
-  FaSignOutAlt,
-} from "react-icons/fa";
+import Profile from "../../assets/Logo-02 (1).png";
+import { IoSearch } from "react-icons/io5";
+import { LuHouse } from "react-icons/lu";
+import { FaShoppingBag } from "react-icons/fa";
+import { FaCartArrowDown } from "react-icons/fa";
+import { BsDiagram2 } from "react-icons/bs";
+import { TbLayoutDashboardFilled } from "react-icons/tb";
+import { RiVipDiamondLine } from "react-icons/ri";
+import { LuAlarmClockPlus } from "react-icons/lu";
+import { IoStatsChartSharp } from "react-icons/io5";
+import { ImStatsBars } from "react-icons/im";
+import { TbChartPieFilled } from "react-icons/tb";
+import "./Dashboard.css";
 
 const Dashboard = () => {
   return (
-    <div className="flex h-screen bg-gray-100">
-      {/* Sidebar */}
-      <aside className="w-64 bg-blue-800 text-white flex flex-col">
-        <div className="p-6 text-center">
-          <h1 className="text-2xl font-bold">My Dashboard</h1>
+    <div className="dashboard-container">
+      <div className="dashboard-profile">
+        <div className="right-side">
+          <img src={Profile} alt="Profile Logo" height="25px" width="160px" />
+          <div className="search-bar">
+            <span className="search-menu">
+              <IoSearch className="search-icon" />
+              <input type="text" placeholder="Search menu..." />
+            </span>
+          </div>
+          <div className="house-container">
+            <LuHouse className="house-icon" />
+            <span className="house-text">Dashboard</span>
+          </div>
+          <div className="pos-management">
+            <h5>POS Management</h5>
+            <div className="option-box">
+              <span>
+                <FaShoppingBag />
+                POS
+              </span>
+              <ul>
+                <li>pos</li>
+                <li>order</li>
+              </ul>
+            </div>
+          </div>
+          <div className="order-management">
+            <h5>ORDER MANAGEMENT</h5>
+          </div>
+          <div className="order-management">
+            <span>
+              <FaCartArrowDown />
+              Order
+            </span>
+            <ul>
+              <li>All</li>
+              <li>Pending</li>
+              <li>Confirmed</li>
+              <li>Processing</li>
+              <li>Out For Delivery</li>
+              <li>Returned</li>
+              <li>Failed</li>
+              <li>canceled</li>
+            </ul>
+          </div>
+
+          <div className="category">
+            <span>
+              <BsDiagram2 />
+              Category
+            </span>
+            <ul>
+              <li>Category</li>
+              <li>Sub Category</li>
+            </ul>
+          </div>
+          <div className="attribute">
+            <span>
+              <TbLayoutDashboardFilled />
+              Attribute
+            </span>
+          </div>
+          <div className="Product">
+            <span>
+              <RiVipDiamondLine />
+              Prodcuts
+            </span>
+            <ul>
+              <li>Add New</li>
+              <li>List</li>
+              <li>Bulk Import</li>
+              <li>Bulk Export</li>
+            </ul>
+          </div>
+          <div className="Management">
+            <div className="banner">
+              <h4>REPORT AND ANALYTICS</h4>
+              <div className="earning-report">
+                <span>
+                  <LuAlarmClockPlus />
+                  Earning Report
+                </span>
+              </div>
+              <div className="order-report">
+                <span>
+                  <IoStatsChartSharp />
+                  Order Report
+                </span>
+              </div>
+              <div className="deliverman-report">
+                <span>
+                  <ImStatsBars />
+                  Deliveryman Report
+                </span>
+              </div>
+              <div className="Product-Report">
+                <span>
+                  <ImStatsBars />
+                  Product Report
+                </span>
+              </div>
+              <div className="sales-report">
+                <span>
+                  <TbChartPieFilled />
+                  Sale Report
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
-        <nav className="flex-grow">
-          <ul className="space-y-4 p-4">
-            <li className="flex items-center gap-2 hover:bg-blue-600 p-2 rounded cursor-pointer">
-              <FaHome /> Home
-            </li>
-            <li className="flex items-center gap-2 hover:bg-blue-600 p-2 rounded cursor-pointer">
-              <FaUserAlt /> Profile
-            </li>
-            <li className="flex items-center gap-2 hover:bg-blue-600 p-2 rounded cursor-pointer">
-              <FaChartBar /> Analytics
-            </li>
-            <li className="flex items-center gap-2 hover:bg-blue-600 p-2 rounded cursor-pointer">
-              <FaCog /> Settings
-            </li>
-            <li className="flex items-center gap-2 hover:bg-blue-600 p-2 rounded cursor-pointer">
-              <FaSignOutAlt /> Logout
-            </li>
-          </ul>
-        </nav>
-      </aside>
-
-      {/* Main Content */}
-      <div className="flex-1 flex flex-col">
-        {/* Top Navbar */}
-        <header className="bg-white shadow p-4 flex items-center justify-between">
-          <h2 className="text-xl font-semibold">Welcome to the Dashboard</h2>
-          <input
-            type="text"
-            placeholder="Search..."
-            className="px-4 py-2 w-64 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-        </header>
-
-        
       </div>
-      <ProductForm/>
     </div>
   );
 };

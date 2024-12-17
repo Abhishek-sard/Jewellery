@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Navigate } from "react-router-dom";
 import axios from "axios";
 
 const Admin=()=> {
@@ -14,7 +15,7 @@ const Admin=()=> {
 
 
 
-  // Handle Login
+  // Handle Login 
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
 
@@ -28,6 +29,7 @@ const Admin=()=> {
       setUserProfile(response.data); // Save the user data if returned
       setError(null);
       setSuccessMessage("Login successful!");
+      Navigate("/dashboard")
     } catch (err) {
       console.error("Login error:", err);
       setError(
