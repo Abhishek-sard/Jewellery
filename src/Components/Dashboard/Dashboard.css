@@ -1,0 +1,56 @@
+.dashboard-container {
+  font-family: sans-serif;
+  background-color: rgb(243, 239, 238);
+  width: 342px;
+  height: 600px;
+  border: 1px solid black;
+  overflow-y: scroll;
+}
+.right-side {
+  width: 300px;
+  margin: 12px;
+  padding: 22px;
+  border-radius: 8px;
+}
+.search-bar {
+  margin-top: 12px;
+}
+.search-menu {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  margin-right: 10px; /* Adjust the value as needed for spacing */
+}
+
+input[type="text"] {
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.house-container {
+  margin-top: 12px;
+}
+.pos-management {
+  margin-top: 12px;
+}
+.house-container {
+  display: flex;
+  align-items: center;
+}
+
+.house-icon {
+  margin-right: 10px; /* Adjust the value as needed for spacing */
+}
+.order-management {
+  display: flex;
+  align-items: center;
+}
+
+.order-Management {
+  margin-right: 8px; /* Adjust the value as needed for spacing */
+}
+
