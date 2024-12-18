@@ -1,4 +1,4 @@
-.dashboard-container {
+.right-side {
   font-family: sans-serif;
   background-color: rgb(243, 239, 238);
   width: 342px;
@@ -6,12 +6,7 @@
   border: 1px solid black;
   overflow-y: scroll;
 }
-.right-side {
-  width: 300px;
-  margin: 12px;
-  padding: 22px;
-  border-radius: 8px;
-}
+
 .search-bar {
   margin-top: 12px;
 }
@@ -52,5 +47,86 @@ input[type="text"] {
 
 .order-Management {
   margin-right: 8px; /* Adjust the value as needed for spacing */
+}
+
+/* left side */
+.left-side {
+  background-color: #f9f9f9;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.p-3 {
+  padding: 1rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.business-status-container {
+  width: 100%;
+  padding: 2rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d3d3d3;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.status-cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.status-card {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d3d3d3;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.text-3xl {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.status-summary-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.summary-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 23%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d3d3d3;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #fff;
 }
 

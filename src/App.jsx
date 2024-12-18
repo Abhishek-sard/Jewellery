@@ -117,7 +117,7 @@ function App() {
         {/* Products routes */}
         <Route path="/products" element={<Products />} />
         <Route path="/products/:slug" element={<ProductCategory />} />
-        <Route path="/Dashboard" element={<Dashboard/>}/>
+        {/* <Route path="/Dashboard" element={<Dashboard/>}/> */}
         <Route path="/admin" element={<Admin/>}/>
       </Routes>
     </Router>
