@@ -29,9 +29,7 @@ input[type="text"] {
 .house-container {
   margin-top: 12px;
 }
-.pos-management {
-  margin-top: 12px;
-}
+
 .house-container {
   display: flex;
   align-items: center;

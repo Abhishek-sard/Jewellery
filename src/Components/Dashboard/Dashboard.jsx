@@ -1,7 +1,6 @@
 import Profile from "../../assets/Logo-02 (1).png";
 import { IoSearch } from "react-icons/io5";
 import { LuHouse } from "react-icons/lu";
-import { FaShoppingBag } from "react-icons/fa";
 import { FaCartArrowDown } from "react-icons/fa";
 import { BsDiagram2 } from "react-icons/bs";
 import { TbLayoutDashboardFilled } from "react-icons/tb";
@@ -13,20 +12,17 @@ import { TbChartPieFilled } from "react-icons/tb";
 import "./Dashboard.css";
 import React, { useState } from "react";
 import {Link, Outlet } from "react-router-dom";
-import Pos from "./Pages/POS/Pos";
+import All from './Orders/All'
 
 
 //outer layout
 
 const Dashboard = () => {
-  const [showPosOptions, setShowPosOptions] = useState("false");
   const [showOrderOptions, setShowOrderOptions] = useState("false");
-  const [showProductOptions, setShowProductOptions] = useState("flase");
+  const [showProductOptions, setShowProductOptions] = useState("false");
   const [showCategoryOptions, setShowCategoryOptions] = useState("false");
 
-  const togglePosOptions = () => {
-    setShowPosOptions((prev) => !prev);
-  };
+
   const toggleOrderOptions = () => {
     setShowOrderOptions((prev) => !prev);
   };
@@ -52,32 +48,18 @@ const Dashboard = () => {
             <LuHouse className="house-icon" />
             <Link to='' className="house-text">Dashboard</Link>
           </div>
-          <div className="pos-management">
-            <h5>POS Management</h5>
-            <div className="option-box" onClick={togglePosOptions}>
-              <span>
-                <FaShoppingBag />
-                POS
-              </span>
-              {showPosOptions && (
-                <ul>
-                  <li ><Link to="Pos">POS</Link></li>
-                  <li>order</li>
-                </ul>
-              )}
-            </div>
-          </div>
+          
           <div className="order-management">
             <h5>ORDER MANAGEMENT</h5>
           </div>
-          <div className="order-Management" onClick={toggleOrderOptions}>
-            <span>
+          <div className="order-Management" >
+            <span onClick={toggleOrderOptions}>
               <FaCartArrowDown />
               Order
             </span>
             {showOrderOptions && (
               <ul>
-                <li>All</li>
+                <Link to='all'>All</Link>
                 <li>Pending</li>
                 <li>Confirmed</li>
                 <li>Processing</li>
