@@ -46,6 +46,8 @@ import Dashboard from "./Components/Dashboard/Dashboard";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import Admin from "./Components/Admin/Admin";
+import Pos from "./Components/Dashboard/Pages/POS/Pos";
+import DashboardContent from "./Components/Dashboard/Pages/DashboardContent";
 
 // Home layout component
 function Home() {
@@ -117,7 +119,10 @@ function App() {
         {/* Products routes */}
         <Route path="/products" element={<Products />} />
         <Route path="/products/:slug" element={<ProductCategory />} />
-        {/* <Route path="/Dashboard" element={<Dashboard/>}/> */}
+        <Route path="Dashboard" element={<Dashboard/>}>
+           <Route index element={<DashboardContent/>}/>
+           <Route path="pos" element={<Pos/>}/>
+        </Route>
         <Route path="/admin" element={<Admin/>}/>
       </Routes>
     </Router>

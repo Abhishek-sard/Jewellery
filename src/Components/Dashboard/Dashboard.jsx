@@ -12,90 +12,13 @@ import { ImStatsBars } from "react-icons/im";
 import { TbChartPieFilled } from "react-icons/tb";
 import "./Dashboard.css";
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes,Route, Link } from "react-router-dom";
-import Pos from "./POS/Pos";
+import {Link, Outlet } from "react-router-dom";
+import Pos from "./Pages/POS/Pos";
 
-const DashboardContent = () => {
-  
 
-  return (
-    <>
-      <div >
-        
-        <div className="left-side">
-          <div>
-            <div className="flex p-3 flex-col">
-              <h1 className="text-2xl font-bold">Welcome, admin.</h1>
-              <p>Welcome admin, here is your business status</p>
-            </div>
-            <div className="business-status-container">
-              <div className="flex justify-between">
-                <div className="flex gap-1">
-                  <img src="" alt="icon" />
-                  <h1>Business Analytics</h1>
-                </div>
-              </div>
-              <div className="status-cards-container">
-                <div className="status-card">
-                  <img src="" alt="icon" className="ml-auto" />
-                  <p>Pending</p>
-                  <h1 className="text-3xl">20</h1>
-                </div>
-                <div className="status-card">
-                  <img src="" alt="icon" className="ml-auto" />
-                  <p>Confirmed</p>
-                  <h1 className="text-3xl">20</h1>
-                </div>
-                <div className="status-card">
-                  <img src="" alt="icon" className="ml-auto" />
-                  <p>Packaging</p>
-                  <h1 className="text-3xl">20</h1>
-                </div>
-                <div className="status-card">
-                  <img src="" alt="icon" className="ml-auto" />
-                  <p>Out for delivery</p>
-                  <h1 className="text-3xl">20</h1>
-                </div>
-              </div>
-              <div className="status-summary-container">
-                <div className="summary-card">
-                  <div className="flex">
-                    <img src="" alt="icon" />
-                    <p>Delivered</p>
-                  </div>
-                  <h1 className="text-2xl">20</h1>
-                </div>
-                <div className="summary-card">
-                  <div className="flex">
-                    <img src="" alt="icon" />
-                    <p>Canceled</p>
-                  </div>
-                  <h1 className="text-2xl">20</h1>
-                </div>
-                <div className="summary-card">
-                  <div className="flex">
-                    <img src="" alt="icon" />
-                    <p>Returned</p>
-                  </div>
-                  <h1 className="text-2xl">20</h1>
-                </div>
-                <div className="summary-card">
-                  <div className="flex">
-                    <img src="" alt="icon" />
-                    <p>Failed to Deliver</p>
-                  </div>
-                  <h1 className="text-2xl">20</h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
+//outer layout
 
-const DashboardNav=()=>{
+const Dashboard = () => {
   const [showPosOptions, setShowPosOptions] = useState("false");
   const [showOrderOptions, setShowOrderOptions] = useState("false");
   const [showProductOptions, setShowProductOptions] = useState("flase");
@@ -113,8 +36,11 @@ const DashboardNav=()=>{
   const toggleCategoryOptions = () => {
     setShowCategoryOptions((prev) => !prev);
   };
-  return(
-<div className="right-side">
+
+  return (
+    <>
+      <div className="flex bg-green-500">
+        <div className="right-side">
           <img src={Profile} alt="Profile Logo" height="25px" width="160px" />
           <div className="search-bar">
             <span className="search-menu">
@@ -124,7 +50,7 @@ const DashboardNav=()=>{
           </div>
           <div className="house-container">
             <LuHouse className="house-icon" />
-            <span className="house-text">Dashboard</span>
+            <Link to='' className="house-text">Dashboard</Link>
           </div>
           <div className="pos-management">
             <h5>POS Management</h5>
@@ -135,7 +61,7 @@ const DashboardNav=()=>{
               </span>
               {showPosOptions && (
                 <ul>
-                  <li ><Link to="/Dashboard/Pos">Pos</Link></li>
+                  <li ><Link to="Pos">POS</Link></li>
                   <li>order</li>
                 </ul>
               )}
@@ -231,23 +157,11 @@ const DashboardNav=()=>{
             </div>
           </div>
         </div>
-  )
-}
-
-const Dashboard=()=>{
-  return(
-    <>
-    <div className="flex bg-green-500">
-      <Router>
-      <DashboardNav/>
-      
-        <Routes>
-          <Route path="/Dashboard" element={<DashboardContent/>}/>
-          <Route path="/Dashboard/Pos" element={<Pos/>}/>
-        </Routes>
-              </Router>
-    </div>
+        
+        <Outlet/>
+      </div>
     </>
-  )
-}
+  );
+};
+
 export default Dashboard;
