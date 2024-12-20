@@ -47,7 +47,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import Admin from "./Components/Admin/Admin";
 import All from './Components/Dashboard/Orders/All'
+import Cancled from "./Components/Dashboard/Orders/Cancled";
 import DashboardContent from "./Components/Dashboard/Pages/DashboardContent";
+import Conform from "./Components/Dashboard/Orders/Conform";
 
 // Home layout component
 function Home() {
@@ -121,7 +123,9 @@ function App() {
         <Route path="/products/:slug" element={<ProductCategory />} />
         <Route path="Dashboard" element={<Dashboard/>}>
            <Route index element={<DashboardContent/>}/>
-           <Route path="All" element={<All/>}/>
+           <Route path="all" element={<All/>}/>
+           <Route path="cancled" element={<Cancled/>}/>
+           <Route path="Conform" element={<Conform/>}/>
           
         </Route>
         <Route path="/admin" element={<Admin/>}/>

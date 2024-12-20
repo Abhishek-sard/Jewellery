@@ -18,8 +18,8 @@ const All = () => {
       <div className="text">
         <h2>ALL Orders</h2>
         <div className="cart-shadow">
-          <h3>Select Date Range</h3>
-          <h5>Select Orders</h5>
+          <h5>Select Date Range</h5>
+          <h6>Select Orders</h6>
           <div className="input-container">
             <select>
               <option value="someOption">All branch</option>

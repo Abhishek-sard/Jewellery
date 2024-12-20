@@ -13,6 +13,8 @@ import "./Dashboard.css";
 import React, { useState } from "react";
 import {Link, Outlet } from "react-router-dom";
 import All from './Orders/All'
+import Cancled from "./Orders/Cancled";
+import comform from "./Orders/Conform";
 
 
 //outer layout
@@ -60,13 +62,13 @@ const Dashboard = () => {
             {showOrderOptions && (
               <ul>
                 <Link to='all'>All</Link>
-                <li>Pending</li>
-                <li>Confirmed</li>
+                <li >Pending</li>
+                <Link to='Conform'>Confirmed</Link>
                 <li>Processing</li>
                 <li>Out For Delivery</li>
                 <li>Returned</li>
                 <li>Failed</li>
-                <li>canceled</li>
+                <Link to='Cancled'>canceled</Link>
               </ul>
             )}
           </div>
