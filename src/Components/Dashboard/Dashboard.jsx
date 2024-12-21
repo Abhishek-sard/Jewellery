@@ -61,9 +61,9 @@ const Dashboard = () => {
             </span>
             {showOrderOptions && (
               <ul>
-                <Link to='all'>All</Link>
-                <li >Pending</li>
-                <Link to='Conform'>Confirmed</Link>
+                <Link to='all'>All</Link><br />
+                <Link to='pending'>Pending</Link><br />
+                <Link to='Conform'>Confirmed</Link><br />
                 <li>Processing</li>
                 <li>Out For Delivery</li>
                 <li>Returned</li>

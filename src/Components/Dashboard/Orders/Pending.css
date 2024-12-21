@@ -1,0 +1,157 @@
+.text {
+  padding: 20px;
+}
+
+.cart-shadow {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-left: 20px;
+}
+h3,
+h5 {
+  margin: 0 0 10px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-box {
+  width: 150px;
+  padding: 8px;
+  border: 1px solid #100b0b; /* Border added */
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.date-picker-container {
+  display: flex;
+  gap: 10px;
+}
+
+.date-picker {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.date-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.date-input-field {
+  padding: 8px;
+  border: 1px solid #ccc; /* Border added */
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.calendar-icon {
+  position: absolute;
+  right: 10px;
+  color: #ccc;
+  pointer-events: none;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.clear-button,
+.show-data-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.clear-button {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.clear-button:hover {
+  background-color: #e0e0e0;
+}
+
+.show-data-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.show-data-button:hover {
+  background-color: #0056b3;
+}
+.search-button {
+  border: 1px solid red;
+  width: 35%;
+  margin: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+
+.tables {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin-left: 12px;
+}
+
+.tables th,
+.tables td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.tables th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+}
+
+.tables td {
+  background-color: #fff;
+  color: #555;
+}
+
+.tables tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tables tr:hover {
+  background-color: #f1f1f1;
+}
+
+.tables th,
+.tables td {
+  border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+  .tables {
+    font-size: 14px;
+  }
+
+  .tables th,
+  .tables td {
+    padding: 8px 10px;
+  }
+}

@@ -50,6 +50,7 @@ import All from './Components/Dashboard/Orders/All'
 import Cancled from "./Components/Dashboard/Orders/Cancled";
 import DashboardContent from "./Components/Dashboard/Pages/DashboardContent";
 import Conform from "./Components/Dashboard/Orders/Conform";
+import Pending from "./Components/Dashboard/Orders/Pending"
 
 // Home layout component
 function Home() {
@@ -126,6 +127,7 @@ function App() {
            <Route path="all" element={<All/>}/>
            <Route path="cancled" element={<Cancled/>}/>
            <Route path="Conform" element={<Conform/>}/>
+           <Route path="Pending" element={<Pending/>}/>
           
         </Route>
         <Route path="/admin" element={<Admin/>}/>
