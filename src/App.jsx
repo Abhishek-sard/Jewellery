@@ -46,11 +46,11 @@ import Dashboard from "./Components/Dashboard/Dashboard";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import Admin from "./Components/Admin/Admin";
-import All from './Components/Dashboard/Orders/All'
+import All from "./Components/Dashboard/Orders/All";
 import Cancled from "./Components/Dashboard/Orders/Cancled";
 import DashboardContent from "./Components/Dashboard/Pages/DashboardContent";
 import Conform from "./Components/Dashboard/Orders/Conform";
-import Pending from "./Components/Dashboard/Orders/Pending"
+import Pending from "./Components/Dashboard/Orders/Pending";
 
 // Home layout component
 function Home() {
@@ -122,15 +122,14 @@ function App() {
         {/* Products routes */}
         <Route path="/products" element={<Products />} />
         <Route path="/products/:slug" element={<ProductCategory />} />
-        <Route path="Dashboard" element={<Dashboard/>}>
-           <Route index element={<DashboardContent/>}/>
-           <Route path="all" element={<All/>}/>
-           <Route path="cancled" element={<Cancled/>}/>
-           <Route path="Conform" element={<Conform/>}/>
-           <Route path="Pending" element={<Pending/>}/>
-          
+        <Route path="Dashboard" element={<Dashboard />}>
+          <Route index element={<DashboardContent />} />
+          <Route path="all" element={<All />} />
+          <Route path="cancled" element={<Cancled />} />
+          <Route path="Conform" element={<Conform />} />
+          <Route path="Pending" element={<Pending />} />
         </Route>
-        <Route path="/admin" element={<Admin/>}/>
+        <Route path="/admin" element={<Admin />} />
       </Routes>
     </Router>
   );

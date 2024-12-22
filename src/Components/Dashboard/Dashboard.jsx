@@ -15,7 +15,8 @@ import {Link, Outlet } from "react-router-dom";
 import All from './Orders/All'
 import Cancled from "./Orders/Cancled";
 import comform from "./Orders/Conform";
-import Processing from './Orders/Processing'
+import Processing from './Orders/Processing';
+import Pending from './Orders/Pending';
 
 
 //outer layout
@@ -63,9 +64,9 @@ const Dashboard = () => {
             {showOrderOptions && (
               <ul>
                 <Link to='all'>All</Link><br />
-                <Link to='pending'>Pending</Link><br />
+                <Link to='Pending'>Pending</Link><br />
                 <Link to='Conform'>Confirmed</Link><br />
-                <Link to='Processing'>Processing</Link>
+                <Link to='Processing'>Processing</Link><br />
                 <li>Out For Delivery</li>
                 <li>Returned</li>
                 <li>Failed</li>
