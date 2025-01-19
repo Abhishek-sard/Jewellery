@@ -12,11 +12,12 @@ import { TbChartPieFilled } from "react-icons/tb";
 import "./Dashboard.css";
 import React, { useState } from "react";
 import {Link, Outlet } from "react-router-dom";
-import All from './Orders/All'
-import Cancled from "./Orders/Cancled";
-import comform from "./Orders/Conform";
-import Processing from './Orders/Processing';
-import Pending from './Orders/Pending';
+// import All from './Orders/All'
+// import Cancled from "./Orders/Cancled";
+// import comform from "./Orders/Conform";
+// import Processing from './Orders/Processing';
+// import Pending from './Orders/Pending';
+// import Delivery from './Orders/Delivery'
 
 
 //outer layout
@@ -67,7 +68,7 @@ const Dashboard = () => {
                 <Link to='Pending'>Pending</Link><br />
                 <Link to='Conform'>Confirmed</Link><br />
                 <Link to='Processing'>Processing</Link><br />
-                <li>Out For Delivery</li>
+                <Link to='Delivery'>Out For Delivery</Link>
                 <li>Returned</li>
                 <li>Failed</li>
                 <Link to='Cancled'>canceled</Link>
